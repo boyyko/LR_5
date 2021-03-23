@@ -1,3 +1,3 @@
-// Copyright 2020 Your Name <your_email>
-
-#include <header.hpp>
+//
+// Created by ubuntu on 16.03.2021.
+//
