@@ -1,3 +1,1 @@
-//
-// Created by ubuntu on 16.03.2021.
-//
+// Copyright 2020 Your Name <your_email>

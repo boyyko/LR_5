@@ -34,7 +34,6 @@ class stack_1 {
 
  private:
   data<T> *top_element;
-
 };
 
 template <typename T>
@@ -72,9 +71,7 @@ void stack_1<T>::pop()
   if (empty())
   {
     throw std::runtime_error("ERROR");
-  }
-  else
-  {
+  } else {
     data<T> *delete_data = top_element;
     top_element = delete_data->next_element;
     delete delete_data;
