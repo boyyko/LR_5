@@ -15,7 +15,12 @@ struct data
 template <typename T>
 class stack_1 {
  public:
-  ~stack_1() {
+  void push(T&& value);
+  void push(const T& value);
+  void pop();
+  const T& head() const;
+  ~stack_1()
+  {
     while (top_element)
     {
       data<T> *delete_data = top_element;
@@ -23,11 +28,6 @@ class stack_1 {
       delete delete_data;
     }
   }
-
-  void push(T&& value);
-  void push(const T& value);
-  void pop();
-  const T& head() const;
 
   bool empty() const {
     return top_element == nullptr;
@@ -88,5 +88,9 @@ void stack_1<T>::pop()
     delete delete_data;
   }
 }
+
+
+
+
 
 #endif // INCLUDE_STACK_1_HPP_
