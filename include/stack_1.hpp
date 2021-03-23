@@ -15,6 +15,15 @@ struct data
 template <typename T>
 class stack_1 {
  public:
+  ~stack_1() {
+    while (top_element)
+    {
+      data<T> *delete_data = top_element;
+      top_element = delete_data->next_element;
+      delete delete_data;
+    }
+  }
+
   void push(T&& value);
   void push(const T& value);
   void pop();
@@ -54,6 +63,8 @@ void stack_1<T>::push(T&& value)
   new_data->d = value;
   new_data->next_element = top_element;
   top_element = new_data;
+
+
 }
 
 template <typename T>
