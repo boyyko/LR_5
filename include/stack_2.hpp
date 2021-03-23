@@ -5,7 +5,6 @@
 #define INCLUDE_STACK_2_HPP_
 
 #include "stack_1.hpp"
-
 #include <utility>
 
 template <typename T>

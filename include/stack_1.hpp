@@ -63,8 +63,6 @@ void stack_1<T>::push(T&& value)
   new_data->d = value;
   new_data->next_element = top_element;
   top_element = new_data;
-
-
 }
 
 template <typename T>
